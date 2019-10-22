@@ -25,6 +25,43 @@ class Solution:
         node2 = l2
 
         result = None
+        accum = 0
+        last_node = None
+        while node1 or node2:
+            val1 = 0
+            val2 = 0
+            
+            if node1:
+                val1 = node1.val
+            if node2:
+                val2 = node2.val
+
+            sum = accum + val1 + val2
+            digit =  sum % 10
+            accum = math.floor(sum/10)
+
+            if result:
+                last_node.next = ListNode(digit)
+                last_node = last_node.next
+            else:
+               result = ListNode(digit)
+               last_node = result
+        
+            if node1:
+                node1 = node1.next
+            if node2:
+                node2 = node2.next
+
+        if accum > 0:
+            last_node.next = ListNode(accum)
+
+        return result
+
+    def addTwoNumbers_v2(self, l1: ListNode, l2: ListNode, accum=0) -> ListNode:
+        node1 = l1
+        node2 = l2
+
+        result = None
         result_last_node = None
         while node1:
             node2_val = 0
@@ -55,7 +92,6 @@ class Solution:
             result_last_node.next = ListNode(accum)
 
         return result
-
 
 s = Solution()
 
