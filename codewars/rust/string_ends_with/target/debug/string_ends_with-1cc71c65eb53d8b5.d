@@ -1,0 +1,1 @@
+/Users/rodrigo/git-projects/github.com/playground/codewars/rust/string_ends_with/target/debug/string_ends_with-1cc71c65eb53d8b5: /Users/rodrigo/git-projects/github.com/playground/codewars/rust/string_ends_with/src/lib.rs

@@ -1,0 +1,1 @@
+/Users/rodrigo/git-projects/github.com/playground/codewars/rust/target/debug/rust-39d8ccae75d65e03: /Users/rodrigo/git-projects/github.com/playground/codewars/rust/src/lib.rs /Users/rodrigo/git-projects/github.com/playground/codewars/rust/src/main.rs
